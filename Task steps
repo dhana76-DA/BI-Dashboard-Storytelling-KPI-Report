@@ -77,82 +77,166 @@ Title: Profit Margin
 KPI measures for Total Sales, Total Profit, and Profit Margin were created using DAX measures to ensure dynamic calculation. These KPIs were displayed using card visuals at the top of the dashboard, allowing real-time performance monitoring based on user-selected filters such as date, region, and category.
 
 ADD TREND CHART: SALES OVER TIME
-1️⃣ Choose the Right Visual
-
+Choose the Right Visual
 Go to Report View
-
 Select Line chart from Visualizations
+Line chart = best for time trends (never bar).
 
-📌 Line chart = best for time trends (never bar).
+Add Fields (MOST IMPORTANT PART)
+Axis (X-axis) Drag: Order Date
+Use Date hierarchy Year, Quarter, Month FOR (best practice): Use Month-Year column (if created)
 
-2️⃣ Add Fields (MOST IMPORTANT PART)
-Axis (X-axis)
+Values (Y-axis) Drag: Total Sales (Measure)
 
-Drag:
-
-Order Date
-
-
-➡ Use Date hierarchy
-
-Year
-
-Quarter
-
-Month
-
-OR (best practice):
-
-Use Month-Year column (if created)
-
-Values (Y-axis)
-
-Drag:
-
-Total Sales (Measure)
-
-
-⚠️ Do NOT drag the raw Sales column.
-
-3️⃣ Fix Date Sorting (Very Common Issue)
-
+Fix Date Sorting (Very Common Issue)
 If using Month-Year:
-
 Select Month-Year column
-
 Column tools → Sort by Column
-
 Sort by Order Date or YearMonth number
-
 This prevents Jan–Dec being scrambled.
 
-4️⃣ Format the Trend Chart (Professional Look)
-X-axis
-
-Type: Continuous
-
-Title: Time
-
-Y-axis
-
-Title: Total Sales
-
-Display units: Auto or Millions
-
-Data Labels
-
-Off (clean look)
-
-Line Style
-
-Stroke width: Medium
-Markers: Optional (on for presentations)
-
 Add Context (Optional but Strong)
-Tooltips
-Add:
-Total Profit
-Profit Margin
+Tooltips Add: Total Profit, Profit Margin. 
 Now hovering shows quality of sales, not just quantity.
 
+A line chart was used to visualize Total Sales over time, enabling trend and seasonality analysis. Date hierarchies allow drill-down from year to month, helping stakeholders understand sales growth patterns and performance fluctuations.
+
+ADD CATEGORY BREAKDOWN (BAR CHART)
+Choose the Right Visual
+Go to Report View
+Select Clustered bar chart
+Bar (horizontal) is best for category comparison and long names.
+
+Add Fields (Critical Setup)
+Axis (Y-axis) Drag: Category 
+Values (X-axis) Drag: Total Sales
+
+
+This shows revenue contribution by category
+
+Optional (Highly Recommended): Profit View
+To deepen analysis, you can:
+Add Total Profit to Values OR
+Duplicate the chart and switch to Total Profit
+Sales shows volume, Profit shows quality.
+
+Sort for Insight (Very Important)
+Click the chart
+Three dots (⋯) → Sort by Total Sales
+Sort → Descending
+
+Top-performing categories appear first.
+Format the Chart (Clean & Professional)
+Data Labels On Display units: Auto
+Axis Titles
+X-axis: Total Sales
+Y-axis: Category
+
+Add Drill Capability (Optional but Impressive)
+Enable Drill Down:
+Category → Sub-Category
+Allows users to explore deeper without cluttering the page.
+
+Placement Tip (Layout)
+Place below or beside Sales Trend
+Keep consistent width with trend chart
+
+A clustered bar chart was used to compare Total Sales across product categories, enabling quick identification of top-performing and underperforming segments. Sorting and drill-down features allow deeper analysis at the sub-category level.
+
+OPTION 1: REGION PERFORMANCE — BAR CHART (RECOMMENDED)
+This is exam-safe, accurate, and always works.
+1️ Insert Visual
+Report View → Clustered bar chart
+2️ Add Fields
+Axis (Y-axis) Region
+Values (X-axis) Total Sales
+(Optional) Add Total Profit to Values (for comparison)
+
+3️. Sort for Insight
+Three dots (⋯)
+Sort by Total Sales
+Descending
+Top-performing regions appear first.
+
+4. Format (Clean Look)
+Data labels → On
+Axis titles → On
+Colors → Single neutral color
+
+OPTION 2: REGION PERFORMANCE — MAP (VISUAL STORY)
+Use this only if region data is clean.
+
+1️ Insert Visual
+Select Map (bubble map) or Filled Map
+
+2️ Add Fields
+Location
+Region / State / Country
+Size
+Total Sales
+Tooltip (Optional but powerful)
+Total Profit
+Profit Margin
+Bubble size = sales volume
+
+3️ Fix Map Issues (Important)
+If map doesn’t show:
+Select Region column
+Column tools → Data category
+Set to: Country / State / Region (as applicable)
+
+Regional performance was analyzed using bar and map visuals to compare Total Sales across geographic areas. Bar charts provide precise comparison, while maps offer intuitive geographic insights, helping identify high-performing and underperforming regions.
+
+ADD TOP 10 PRODUCTS TABLE
+1️ Create the Required Measure (If Not Already)
+Go to Modeling → New measure
+Total Sales = SUM('Fact_Sales'[Sales])
+
+2️ Insert the Table Visual
+Report View → Table visual
+
+3️ Add Fields to the Table
+Drag these fields:
+Columns
+Product Name
+Total Sales
+Total Profit
+Profit Margin
+This shows both performance and quality of products.
+
+4️ Filter to Top 10 Products (VERY IMPORTANT)
+Method: Visual-Level Filter (Best)
+Select the table
+Go to Filters pane
+Under Filters on this visual
+Drag Product Name
+Change filter type to Top N
+Set:
+Show items: Top 10
+By value: Total Sales
+Click Apply filter
+Now the table always shows Top 10 by Sales
+
+5️ Sort the Table
+Click on Total Sales column
+Sort → Descending
+Top product appears first.
+
+6️ Format the Table (Clean & Professional)
+Column Formatting
+Total Sales → Currency
+Total Profit → Currency
+Profit Margin → Percentage
+Grid
+Row padding → Medium
+Grid lines → Off (clean look)
+
+7️ Optional (Advanced but Impressive)
+Conditional Formatting
+Profit Margin → Color scale
+Red = Low
+Green = High
+Data Bars
+Total Sales → Data bars
+Makes top performers visually pop.
 VISUAL STORYTELLING
