@@ -1,0 +1,110 @@
+Insights, Findings & Recommendations
+1. Project Overview
+
+This project focuses on building an interactive Business Intelligence (BI) dashboard to analyze sales performance using KPI metrics.
+
+ 
+2. Key KPIs Analyzed
+
+Total Sales – 8.37 millions.
+
+Total Profit – 1.12 millions.
+
+Profit Margin – -1.44 millions need to improve the get the profit.
+
+These KPIs dynamically update based on filters such as date, region, and category.
+
+3. Sales Trend Analysis (Over Time)
+Findings:
+
+Sales show a clear upward trend over the years, indicating steady business growth.
+
+Initial years of 2011 recorded lower sales, followed by consistent improvement in subsequent years.
+
+Peak sales are observed in the most recent 2014 periods, suggesting increased market demand and improved customer acquisition.
+
+Minor fluctuations exist, indicating seasonal demand patterns.
+
+Insight:
+
+The business is growing steadily, and recent performance shows strong momentum.
+
+4. Category Performance Analysis
+Findings:
+
+Technology category generates the highest sales and profit margins, making it the most valuable category.
+
+Office Supplies show stable sales with moderate profitability.
+
+Furniture category, while generating significant revenue, shows lower profit margins, indicating higher costs or discounting.
+
+Insight:
+
+High sales do not always translate into high profit. Margin analysis is critical for decision-making.
+
+5. Regional Performance Analysis
+Findings:
+
+Certain regions consistently outperform others in terms of total sales and profit.
+
+Some regions contribute lower revenue and profitability, indicating potential market underpenetration.
+
+Regional performance varies significantly, suggesting differences in customer demand and operational efficiency.
+
+Insight:
+
+Sales performance is uneven across regions, presenting opportunities for targeted regional strategies.
+
+6. Top 10 Products – High Profit Contributors
+Findings:
+
+Zebra zm400 label printer, Zebra GX4290 thermal printer, Xerox multifunction printer, Xiamoi, Zebra GK4290 thermal printer
+printout recycle, printout paper, note card, message books, parchmaent paper.  
+The Top 10 products contribute a significant portion of total sales and profit, indicating revenue concentration.
+
+These products show strong profit margins, making them key business drivers.
+
+Some high-selling products generate lower margins, highlighting pricing or cost challenges.
+
+Insight:
+
+A small set of products drives a large share of profitability, increasing dependency risk.
+
+7. Key Business Findings 
+
+Sales have increased consistently over the years, indicating strong business growth.
+
+Technology products are the most profitable, while Furniture requires cost optimization.
+
+Revenue and profit are concentrated among a small group of top-performing products.
+
+Regional performance varies significantly, requiring customized strategies.
+
+8. Recommendations to Improve Sales & Profitability
+To Increase Sales:
+
+Focus marketing and promotional efforts on high-performing regions.
+
+Expand availability and promotion of top-selling and high-margin products.
+
+Improve presence in underperforming regions through targeted campaigns.
+
+To Improve Profitability:
+
+Optimize pricing and reduce costs in low-margin categories such as Furniture.
+
+Limit excessive discounting on products with low profit margins.
+
+Encourage cross-selling of high-margin products.
+
+Strategic Improvements:
+
+Diversify product portfolio to reduce dependency on a few top products.
+
+Use seasonal trends to plan inventory and promotions effectively.
+
+Monitor KPIs regularly using the dashboard for proactive decision-making.
+
+9. Conclusion
+
+The BI dashboard successfully transforms raw sales data into actionable insights through KPI tracking, trend analysis, and product-level profitability evaluation. By focusing on high-margin categories, strengthening regional strategies, and optimizing low-performing segments, the organization can achieve sustainable sales growth and improved profitability.
