@@ -2,3 +2,76 @@ Take the Global Superstore data set.
 
 Add the columuns are Profit Margin, Cost columuns in the Superstore data set. 
 Import the data set into the Power bi. 
+
+Financial KPI Columns Added. 
+Profit Margin 
+Profit Margin = DIVIDE([Profit], [Sales])  
+
+#It will fill all the columns without the below errors for the Caluculation=IFERROR(G2/F2,0)
+Sales is in column F
+Profit is in column G
+You want Profit Margin in column H
+Calculates Profit ÷ Sales
+Avoids #DIV/0! errors
+Is equivalent to Power BI’s DIVIDE()
+Profit Margin was calculated in Excel using a dynamic formula with error handling to ensure accurate results even when sales values are zero. The formula was auto-filled across the dataset using Excel table functionality for scalability and consistency.
+
+Cost (Optional but Powerful)
+Cost = [Sales] - [Profit]
+
+#Calculation Steps:
+=IFERROR(S2 - V2, 0)
+Sales = column S
+Profit = column V
+Cost was derived in Excel by subtracting Profit from Sales using a row-wise formula with error handling. The calculation was auto-filled across the dataset using Excel table functionality to maintain consistency and scalability.
+
+KPI MEASURES Taken. 
+Total Sales = SUM('Table'[Sales])
+Total Profit = SUM('Table'[Profit])
+Average Margin = AVERAGE('Table'[Profit Margin])
+KPI measures such as Total Sales, Total Profit, and Profit Margin were calculated using a centralized fact table containing transactional data. Supporting dimension tables for date, product, and region were used to enable filtering and drill-down analysis, following a star schema design.
+
+STEP 1: Import Dataset
+Open Power BI Desktop
+Home → Get Data → Excel / CSV
+Load your dataset
+Click Load
+
+Make sure these columns exist:
+Sales
+Profit
+Order Date
+
+STEP 2: Create KPI MEASURES (IMPORTANT: Measures, not columns)
+Go to Data view or Report view → Modeling → New measure
+Total Sales (Measure) Total Sales = SUM('Fact_Sales'[Sales])
+Total Profit (Measure) Total Profit = SUM('Fact_Sales'[Profit])
+Profit Margin (Measure) Profit Margin = DIVIDE([Total Profit], [Total Sales], 0)
+
+This:
+Prevents divide-by-zero errors
+Updates dynamically with slicers
+
+STEP 3: Format the Measures (Very Important)
+Total Sales
+Format: Currency
+Decimal places: 0 or 2
+Total Profit
+Format: Currency
+Profit Margin
+Format: Percentage
+Decimal places: 1–2
+
+STEP 4: Create KPI CARDS (Dashboard Top Section)
+Go to Report View  - Insert Card visual
+Card 1
+Field: Total Sales
+Title: Total Sales
+Card 2
+Field: Total Profit
+Title: Total Profit
+Card 3
+Field: Profit Margin
+Title: Profit Margin
+
+VISUAL STORYTELLING
