@@ -30,3 +30,31 @@ Geographic Performance: A regional map/bar chart to pinpoint high and low-perfor
 
 Product Deep-Dive: A "Top 10 Products" table to highlight revenue drivers.
 Interactive Slicers: Dynamic filters for Region, Date, and Category to allow for self-service analysis.
+
+Category Performance Analysis Findings:
+Technology category generates the highest sales and profit margins, making it the most valuable category.
+Office Supplies show stable sales with moderate profitability.
+Furniture category, while generating significant revenue, shows lower profit margins, indicating higher costs or discounting.
+
+Insight:
+High sales do not always translate into high profit. Margin analysis is critical for decision-making.
+
+Total KPI Measures: 
+Total Sales – 8.37 millions.
+Total Profit – 1.12 millions.
+Profit Margin – -1.44 millions need to improve the get the profit.
+
+Top 10 Products – High Profit Contributors
+Findings:
+
+Zebra zm400 label printer, 
+Zebra GX4290 thermal printer, 
+Xerox multifunction printer,
+Xiamoi, 
+Zebra GK4290 thermal printer
+Printout recycle,
+Printout paper,
+Note card, 
+Message books,
+Parchmaent paper.
+
