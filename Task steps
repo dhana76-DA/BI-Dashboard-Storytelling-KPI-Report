@@ -239,4 +239,113 @@ Green = High
 Data Bars
 Total Sales → Data bars
 Makes top performers visually pop.
-VISUAL STORYTELLING
+
+A Top 10 Products table was created using a visual-level Top N filter based on Total Sales. The table displays sales, profit, and profit margin, enabling identification of high-performing and high-margin products.
+
+Top 10 Products – High Profit Contributors
+Findings:
+
+Zebra zm400 label printer, Zebra GX4290 thermal printer, Xerox multifunction printer, Xiamoi, Zebra GK4290 thermal printer
+printout recycle, printout paper, note card, message books, parchmaent paper.  
+
+The Top 10 products contribute a significant portion of total sales and profit, indicating revenue concentration.
+These products show strong profit margins, making them key business drivers.
+Some high-selling products generate lower margins, highlighting pricing or cost challenges.
+
+ADD SLICERS IN POWER BI (REGION • YEAR • CATEGORY)
+1️ Add Region Slicer
+Steps:
+Go to Report View
+From Visualizations pane, select Slicer
+Drag Region → Field
+Format (Recommended):
+Slicer type → Dropdown
+Title → On
+Title text → Region
+Single select → Off (allow multi-select)
+Use when users want to filter by geography.
+
+2️ Add Year Slicer
+Best Practice: Use Year column (not full date)
+Steps:
+Insert another Slicer
+Drag Order Date → Field
+Click dropdown on the slicer → choose Year (or drag Year column if you created one)
+
+Format:
+Slicer type → Horizontal
+Title → Year
+This avoids confusing date ranges and improves usability.
+
+3️ Add Category Slicer
+Steps:
+Insert a Slicer
+Drag Category → Field
+
+Format:
+Slicer type → List or Dropdown
+Title → Category
+Multi-select → On
+Useful to analyze category-wise performance instantly.
+
+4️ Arrange Slicers (Layout Tip)
+Best layout:
+[ Region ]   [ Year ]   [ Category ]
+
+Steps:
+Select all slicers (Ctrl + Click)
+Format → Align → Top
+Format → Distribute horizontally
+Keeps dashboard clean and professional.
+
+5️ Ensure Slicers Affect All Visuals
+Check interactions:
+Select a slicer
+Go to Format → Edit interactions
+Ensure Filter icon is active on all visuals
+Turn off filter only if needed
+
+6️ Optional Enhancements (Recommended)
+Sync slicers (if multiple pages):
+View → Sync slicers
+Sync Region/Year across pages
+Clear selection button:
+Add a button → Action → Clear filters
+
+
+Interactive slicers for Region, Year, and Category were added to allow dynamic filtering of KPIs and visuals. This enables users to explore sales performance across different dimensions and supports data-driven decision-making.
+
+Category Performance Analysis
+Findings:
+Technology category generates the highest sales and profit margins, making it the most valuable category.
+Office Supplies show stable sales with moderate profitability.
+Furniture category, while generating significant revenue, shows lower profit margins, indicating higher costs or discounting.
+Insight: High sales do not always translate into high profit. Margin analysis is critical for decision-making.
+
+A dedicated insights section was added to summarize key business findings derived from KPI cards and visuals. This helps stakeholders quickly understand trends, category performance, and revenue concentration without interpreting individual charts.
+
+Key Business Findings (Summary)
+Sales have increased consistently over the years, indicating strong business growth.
+Technology products are the most profitable, while Furniture requires cost optimization.
+Revenue and profit are concentrated among a small group of top-performing products.
+Regional performance varies significantly, requiring customized strategies.
+
+Recommendations to Improve Sales & Profitability
+To Increase Sales:
+Focus marketing and promotional efforts on high-performing regions.
+Expand availability and promotion of top-selling and high-margin products.
+Improve presence in underperforming regions through targeted campaigns.
+
+To Improve Profitability:
+Optimize pricing and reduce costs in low-margin categories such as Furniture.
+Limit excessive discounting on products with low profit margins.
+Encourage cross-selling of high-margin products.
+
+Strategic Improvements:
+Diversify product portfolio to reduce dependency on a few top products.
+Use seasonal trends to plan inventory and promotions effectively.
+Monitor KPIs regularly using the dashboard for proactive decision-making.
+
+9. Conclusion
+The BI dashboard successfully transforms raw sales data into actionable insights through KPI tracking, trend analysis, and product-level profitability evaluation. By focusing on high-margin categories, strengthening regional strategies, and optimizing low-performing segments, the organization can achieve sustainable sales growth and improved profitability.
+
