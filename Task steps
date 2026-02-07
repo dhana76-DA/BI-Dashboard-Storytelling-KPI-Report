@@ -74,4 +74,85 @@ Card 3
 Field: Profit Margin
 Title: Profit Margin
 
+KPI measures for Total Sales, Total Profit, and Profit Margin were created using DAX measures to ensure dynamic calculation. These KPIs were displayed using card visuals at the top of the dashboard, allowing real-time performance monitoring based on user-selected filters such as date, region, and category.
+
+ADD TREND CHART: SALES OVER TIME
+1️⃣ Choose the Right Visual
+
+Go to Report View
+
+Select Line chart from Visualizations
+
+📌 Line chart = best for time trends (never bar).
+
+2️⃣ Add Fields (MOST IMPORTANT PART)
+Axis (X-axis)
+
+Drag:
+
+Order Date
+
+
+➡ Use Date hierarchy
+
+Year
+
+Quarter
+
+Month
+
+OR (best practice):
+
+Use Month-Year column (if created)
+
+Values (Y-axis)
+
+Drag:
+
+Total Sales (Measure)
+
+
+⚠️ Do NOT drag the raw Sales column.
+
+3️⃣ Fix Date Sorting (Very Common Issue)
+
+If using Month-Year:
+
+Select Month-Year column
+
+Column tools → Sort by Column
+
+Sort by Order Date or YearMonth number
+
+This prevents Jan–Dec being scrambled.
+
+4️⃣ Format the Trend Chart (Professional Look)
+X-axis
+
+Type: Continuous
+
+Title: Time
+
+Y-axis
+
+Title: Total Sales
+
+Display units: Auto or Millions
+
+Data Labels
+
+Off (clean look)
+
+Line Style
+
+Stroke width: Medium
+Markers: Optional (on for presentations)
+
+Add Context (Optional but Strong)
+Tooltips
+Add:
+Total Profit
+Profit Margin
+Now hovering shows quality of sales, not just quantity.
+
 VISUAL STORYTELLING
